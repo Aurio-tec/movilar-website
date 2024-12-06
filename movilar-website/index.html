@@ -1,0 +1,352 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MoviLar</title>
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS INTERNO DO PROJECTO -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--JAVA SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    </head>
+    <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+            <a href="#" class="navbar-brand primary-color">
+                    <img src="imagens/favicon.ico" alt="MoviLar">
+                    <span>MoviLar</span>
+            </a> 
+                <button type="button" 
+                class="navbar-toggler" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-items"
+                aria-controls="navbar-items"
+                aria-expanded="false"
+                aria-label="toggle navigation"
+                >
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active primary-color" aria-current="page">Casa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color">Projectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color">Imoveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+    </nav>
+    <!--FIM NAVBAR-->
+    <!--SLIDER-->
+        <div class="container" id="slider-container">
+            <div class="carousel slide" id="slider" data-bsride="carousel">
+                <div class="carousel-indicators">
+                    <button
+                    type="button"
+                     class="active"
+                     data-bs-target="#slider"
+                      data-bs-slide-to="0"
+                      aria-current="true"
+                      aria-label="slide 1"
+                      ></button>
+                      <button
+                    type="button"
+                     data-bs-target="#slider"
+                      data-bs-slide-to="1"
+                      aria-label="slide 2"
+                      ></button>
+                      <button
+                    type="button"
+                     data-bs-target="#slider"
+                      data-bs-slide-to="2"
+                      aria-label="slide 3"
+                      ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/banner/banner-1.jpg" alt="Casa1" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Casas planejadas</h5>
+                            <a href="#" class="btn btn-dark">Projectos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/banner/banner-2.jpg" alt="Casa2" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Projectos Complexos</h5>
+                            <a href="#" class="btn btn-dark">Projectos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/banner/banner-3.jpg" alt="Casa3" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Projectos Inovadores</h5>
+                            <a href="#" class="btn btn-dark">Projectos</a>
+                        </div>
+                    </div> 
+                </div>
+                <button class="carousel-control-prev" 
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide="prev"
+                >
+                <i class="bi bi-chevron-compact-left"></i>
+                <sp class="visually-hidden">Anterior</sp>
+                </button>
+                    <button class="carousel-control-left" 
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide="pnext"
+                    >
+                    <i class="bi bi-chevron-compact-left"></i>
+                    <sp class="visually-hidden">Proximo</sp>
+                    </button>
+                    <button class="carousel-control-next" 
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide="next"
+                    >
+                    <i class="bi bi-chevron-compact-right"></i>
+                    <sp class="visually-hidden">Proximo</sp>
+                    </button>
+            </div>
+        </div>  
+        <!-- FIM DO SLIDER-->
+         <!--MINI-BANNER-->
+    <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+                <i class="bi bi-box primary-color"></i>
+                <div class="card-body">
+                    <h5 class="card-title primary-color">Projectos Complexos</h5>
+                    <p class="card-text secondary-color text-justify">
+                        Na MoviLar, estamos à frente de projetos de grande complexidade, 
+                        sempre focados em soluções inovadoras e eficientes. E o diferencial? Você participa também!
+                    </p>
+                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+                <i class="bi bi-layers primary-color"></i>
+                <div class="card-body">
+                    <h5 class="card-title primary-color">Voce participa Também</h5>
+                    <p class="card-text secondary-color">Valorizamos sua opinião em todas as etapas, para que cada detalhe reflita suas expectativas.
+                    </p>
+                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+                <i class="bi bi-lightning-charge primary-color"></i>
+                <div class="card-body">
+                    <h5 class="card-title primary-color">Adiantamento de entregas</h5>
+                    <p class="card-text secondary-color">
+                        Com nosso compromisso de adiantamento de entregas, 
+                        antecipamos seus projetos com agilidade, garantindo excelência sem comprometer a qualidade.
+                    </p>
+                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--DESTAQUES-->
+    <div class="container" id="featured-container">
+             <div class="col-12">
+                <h2 class="title primary-color">Trabalhos Em Destaque</h2>
+                <p class="subtitle secondary-color">Conheça Nossos Projectos Mais Desafiadores
+                </p>
+             </div>
+             <div class="col-12" id="featured-images">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <img src="imagens/Project/project-1.jpg" alt="Projecto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projecto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="imagens/Project/project-2.jpg" alt="Projecto 2" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projecto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="imagens/Project/project-3.jpg" alt="Projecto 3" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projecto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="imagens/Project/project-4.jpg" alt="Projecto 4" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projecto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="imagens/Project/project-5.jpg" alt="Projecto 5" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projecto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="imagens/Project/project-6.jpg" alt="Projecto 6" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projecto</h3>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+         <!--INFO-->
+         <div class="container" id="info-container">
+            <div class="col-12">
+                <h2 class="title primary-color">Detalhes Importantes</h2>
+                <p class="subtitle secondary-color">
+                    Saiba mais sobre a experiência da nossa incrivel equipe!
+                </p>
+             </div>
+             <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-5" id="info-banner">
+                        <img src="imagens/equipe.jpg"
+                        alt="informação da empresa"
+                        class="img-fluid" 
+                        />
+                    </div>
+                    <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                        <div class="row">
+                            <div class="container" id="info-container">
+                                <div class="col-12">
+                                    <h2 class="title primary-color">Estes dados fazem a diferença</h2>
+                                    <p class="subtitle secondary-color">
+                                        Nossa experiência e resultados refletem a confiança e a qualidade que entregamos.
+                                         Os números abaixo são mais que estatísticas; eles mostram nossa dedicação e compromisso ao longo dos anos.
+                                    </p>
+                                 </div>
+                                 <div class="col-12" id="info-numbers">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h3 class="primary-color">18</h3>
+                                            <p class="secondary-color">Anos na construção civil</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <h3 class="primary-color">195</h3>
+                                            <p class="secondary-color">Projectos executados</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <h3 class="primary-color">216</h3>
+                                            <p class="secondary-color">Clientes</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12">
+                                    <a href="#" class="btn btn-dark">Saber mais</a>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+         <!--FOOTER-->
+         <footer class="container-fluid bg-dark-color" id="footer">
+            <div class="container">
+                <div class="arow">
+                    <!--footer top-->
+                   <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col 4"><h2>MoviLar</h2></div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                   </div>
+                   <!--Footer details-->
+                   <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>fique por dentro das novidades!</h4>
+                            <p class="secondary-color">escreva-se para saber em primeira mão</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Degite o seu email">
+                                </div>
+                                <button class="btn btn-dark" type="submit">In Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>formas de Contacto</h4>
+                            <p class="secondary-color">(+244)-944-382-662</p>
+                            <p class="secondary-color">MoviLar@gmail.com</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Voce pode estar procurando por:</h4>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Projectos</a></li>
+                                        <li><a href="#" class="secondary-color">Imoveis</a></li>
+                                        <li><a href="#" class="secondary-color">vendas</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">contatar</a></li>
+                                        <li><a href="#" class="secondary-color">Trabalhe conosco</a></li>
+                                        <li><a href="#" class="secondary-color">Contacto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <!--footer bottom-->
+                   <div class="col-12" id="footer-botton">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">MoviLar &copy; 2024</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">Realizamos o seu Projecto <i class="bi bi-balloon-heart-fill"></i></p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+         </footer>
+    </body>
+    </html> 
